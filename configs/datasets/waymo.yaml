@@ -1,0 +1,17 @@
+data:
+  waymo:
+    n_pillars_x: 640
+    n_pillars_y: 640
+    point_features: 3 # maximum 5
+    x_min: -35
+    x_max: 35
+    y_min: -35
+    y_max: 35
+    z_min: 0.7  #0.45 # 0.3 for waymo | -1.4 for raw kitti
+    z_max: 10
+    batch_size: 1
+    has_test: True
+    num_workers: 4
+    n_points: 8192
+    apply_pillarization: True
+    shuffle_train: True
